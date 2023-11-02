@@ -7,9 +7,9 @@ public class Factory {
 
     public Toy create(String name) throws NoSuchToyException {
         if(name.equals("teddy")) {
-            return new TeddyBear();
+            return new TeddyBear("teddy");
         } else if(name.equals("gameboy")) {
-            return new Gameboy();
+            return new Gameboy("teddy");
         }
 
         throw new NoSuchToyException("No such toy: " + name);
