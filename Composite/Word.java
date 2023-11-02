@@ -9,6 +9,6 @@ public class Word implements Sentence {
     }
 
     public void print(){
-        System.out.print(word);
+        System.out.println(word);
     }
 }
