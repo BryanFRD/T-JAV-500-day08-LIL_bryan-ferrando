@@ -7,12 +7,12 @@ public class Factory {
 
     public Toy create(String name) throws NoSuchToyException {
         if(name.equals("teddy")) {
-            return new TeddyBear(name);
+            return new TeddyBear();
         } else if(name.equals("gameboy")) {
-            return new Gameboy(name);
+            return new Gameboy();
         }
 
-        throw new NoSuchToyException("No such toy: " + name);
+        throw new NoSuchToyException("No such toy: " + name + ".");
     }
 
     public List<GiftPaper> getPapers(int number){

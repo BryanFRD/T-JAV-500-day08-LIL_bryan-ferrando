@@ -7,6 +7,7 @@ public class Shield extends StuffDecorator {
         System.out.println("May this shield protect me against every enemy.");
     }
 
+    @Override
     public int getHp() {
         return holder.getHp() + 10;
     }

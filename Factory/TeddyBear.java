@@ -2,8 +2,8 @@ package Factory;
 
 public class TeddyBear extends Toy {
 
-    public TeddyBear(String title) {
-        super(title);
+    public TeddyBear() {
+        super("teddy");
     }
 
 }
