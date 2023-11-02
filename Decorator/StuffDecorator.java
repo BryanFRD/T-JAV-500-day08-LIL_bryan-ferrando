@@ -4,7 +4,7 @@ public class StuffDecorator extends Warrior {
 
     protected Warrior holder;
 
-    protected StuffDecorator(Warrior warrior) {
+    public StuffDecorator(Warrior warrior) {
         super(warrior.hp, warrior.dmg);
         this.holder = warrior;
     }
