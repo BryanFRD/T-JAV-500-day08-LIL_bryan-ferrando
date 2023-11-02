@@ -34,12 +34,13 @@ public class Elf {
     }
 
     public GiftPaper pack(){
-        if(toy == null){
-            System.out.println("I don't have any toy, but I've some paper!");
-        }
-
         if(papers == null || papers.isEmpty()){
             System.out.println("Wait... I can't pack it with my shirt.");
+            return null;
+        }
+
+        if(toy == null){
+            System.out.println("I don't have any toy, but I've some paper!");
             return null;
         }
 
