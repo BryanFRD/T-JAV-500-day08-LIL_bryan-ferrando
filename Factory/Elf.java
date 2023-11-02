@@ -23,7 +23,7 @@ public class Elf {
             System.out.println("What a nice one! I would have liked to keep it...");
             return true;
         } catch (NoSuchToyException e) {
-            System.out.println("I didn't find any " + name);
+            System.out.println("I didn't find any " + name + ".");
             return false;
         }
     }
