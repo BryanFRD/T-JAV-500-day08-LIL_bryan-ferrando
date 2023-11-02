@@ -2,9 +2,9 @@ package Factory;
 
 public abstract class Toy {
 
-    protected String title;
+    private String title;
 
-    public Toy(String title) {
+    protected Toy(String title) {
         this.title = title;
     }
 
