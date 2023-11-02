@@ -26,6 +26,7 @@ public class Order implements Observable {
         this.position = position;
         this.destination = destination;
         this.timeBeforeArrival = timeBeforeArrival;
+        notifyObservers();
     }
 
     @Override
@@ -35,6 +36,7 @@ public class Order implements Observable {
 
     @Override
     public boolean notifyObservers() {
+        observers.forEach(observer -> observer.update(this));
         return !this.observers.isEmpty();
     }
 }
