@@ -39,13 +39,13 @@ public class Elf {
             return null;
         }
 
-        if(toy == null){
-            System.out.println("I don't have any toy, but I've some paper!");
-            return null;
-        }
-
         GiftPaper paper = papers.remove(0);
-        paper.wrap(toy);
+        if(toy == null){
+            System.out.println("I don't have any toy, but hey at least it's paper!");
+        } else {
+            System.out.println("And another kid will be happy!");
+            paper.wrap(toy);
+        }
         toy = null;
         return paper;
     }
